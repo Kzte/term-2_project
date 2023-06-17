@@ -14,6 +14,263 @@
   
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <img src="../assets/supersubs.png" alt="Featured Image">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="./index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#about-us">About Us</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#subs-of-the-month">Subs of the Month</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./build-a-sub.html">Build a Sub</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./checkout.html">Checkout</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav> 
+
+<section id="build-a-sub" class="container">
+    <h2 class="display-4">Build A Sub</h2>
+
+    <form id="sub-form" onsubmit="AddToOrder(event)">
+      <div class="form-group">
+        <label for="sub-name">Sub Name:</label>
+        <input type="text" id="sub-name" name="sub-name" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="base-bread">Base Bread:</label>
+        <select id="base-bread" name="base-bread" class="form-control" required>
+          <option value="">Select Base Bread</option>
+          <option value="Multigrain Bread">Multigrain Bread(R15)</option>
+          <option value="Whole Wheat Bread">Whole Wheat Bread(R20)</option>
+          <option value="Croissant">Croissant(R25)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="toppings">Toppings (Select at least 5): R10 per toppings</label>
+        
+        
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Spinach-leaves">
+          <label class="form-check-label" for="Toppings">
+            Spinach leaves
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Sprouts">
+          <label class="form-check-label" for="Toppings">
+            Sprouts
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Bacon">
+          <label class="form-check-label" for="Toppings">
+            Bacon
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Avocado slices">
+          <label class="form-check-label" for="Toppings">
+            Avocado slices
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Olives">
+          <label class="form-check-label" for="Toppings">
+            Olives
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Chicken">
+          <label class="form-check-label" for="Toppings">
+            Chicken
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Ham">
+          <label class="form-check-label" for="Toppings">
+            Ham
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Cabbage slaw">
+          <label class="form-check-label" for="Toppings">
+            Cabbage slaw
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Cucumbers">
+          <label class="form-check-label" for="Toppings">
+            Cucumbers
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Sun-dried tomatoes">
+          <label class="form-check-label" for="Toppings">
+            Sun-dried tomatoes
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Pickles">
+          <label class="form-check-label" for="Toppings">
+            Pickles
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Roasted red peppers">
+          <label class="form-check-label" for="Toppings">
+            Roasted red peppers
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Onion rings">
+          <label class="form-check-label" for="Toppings">
+            Onion rings
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Creamy Cheese">
+          <label class="form-check-label" for="Toppings">
+            Creamy Cheese
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Tomato slices">
+          <label class="form-check-label" for="Toppings">
+            Tomato slices
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Sweet relish">
+          <label class="form-check-label" for="Toppings">
+            Sweet relish
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Pepperoncini">
+          <label class="form-check-label" for="Toppings">
+            Pepperoncini
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Lettuce">
+          <label class="form-check-label" for="Toppings">
+            Lettuce
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Shredded-Carrots">
+          <label class="form-check-label" for="Toppings">
+            Shredded Carrots
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Toppings" type="checkbox" value="Beef">
+          <label class="form-check-label" for="Toppings">
+            Beef
+          </label>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="sauce">Sauce (Select at least 1):R5 per sauce</label>
+
+        <div class="form-check">
+          <input class="form-check-input Sauces" type="checkbox" value="Pesto">
+          <label class="form-check-label" for="Toppings">
+            Pesto
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Sauces" type="checkbox" value="Chipotle">
+          <label class="form-check-label" for="Toppings">
+            Chipotle
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Sauces" type="checkbox" value="Ranch-Dressing">
+          <label class="form-check-label" for="Toppings">
+            Ranch Dressing
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Sauces" type="checkbox" value="Mustard">
+          <label class="form-check-label" for="Toppings">
+            Mustard
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input Sauces" type="checkbox" value="Mayonnaise">
+          <label class="form-check-label" for="Toppings">
+            Mayonnaise
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary addToOrder">Add to Order</button>
+    </form>
+  </section>
+
+  <footer class="container-fluid border border-rounded footbot">
+    <div class="Logo">
+        <img src="../assets/SUPERSUB.png" alt="">
+    </div>
+    <p>&copy; 2023 Submarine Sandwiches. All rights reserved.</p>
+    <div class="socials">
+        <img src="../assets/face.png" alt="">
+        <img src="../assets/insta.png" alt="">
+    </div>
+  </footer>
+
+  <script type="application/javascript" src="../js/index.js "></script>
 
    
 </body>
