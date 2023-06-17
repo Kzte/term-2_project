@@ -1,3 +1,95 @@
 
 
 
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left:  10px;
+  margin-right: 10px;
+  
+}
+
+section{
+  margin-top: 20px;
+}
+
+p{
+  margin-top: 10px;
+}
+
+nav img {
+  width: 15%;
+  height: auto;
+}
+
+.header-buttons {
+  margin-top: 20px;
+}
+
+.sub-container {
+  margin-top: 20px;
+}
+
+.sub {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.slide>img{
+  width: 500px;
+  height: auto;
+}
+
+.sub>img{
+  width: 300px;
+  height: auto;
+}
+
+.order-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color:white;
+  margin-top: auto;
+  
+}
+
+.total{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.total>button{
+  margin-top: 20px;
+}
+
+.footbot{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+ .Logo>img{
+  width: 100px;
+  height: auto;
+
+ }
+ .socials>img{
+  width: 50px;
+  height: auto; 
+  background-color: transparent;
+
+
+ }
+
+ .addToOrder{
+  margin-bottom:20px;
+ }
