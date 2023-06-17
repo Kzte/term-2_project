@@ -14,7 +14,78 @@
   
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <img src="../assets/supersubs.png" alt="Featured Image">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
 
+        <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="./index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#about-us">About Us</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#subs-of-the-month">Subs of the Month</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./build-a-sub.html">Build a Sub</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./checkout.html">Checkout</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav> 
+
+<section id="checkout" class="container">
+    <h2 class="display-4">Checkout</h2>
+    <div id="order-details">
+        <div class="row sub-container" id="subs-container">          
+
+          </div>
+    </div>
+
+    <form id="coupon-form" onsubmit="applyCoupon(event)">
+      <div class="form-group">
+        <label for="coupon-code">Coupon Code:</label>
+        <input type="text" id="coupon-code" name="coupon-code" class="form-control" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Apply Coupon</button>
+    </form>
+
+    <div class="total">
+        <h2 id="total"></h2>
+        <button type="submit" class="btn btn-primary" onclick="placeOrder()">Place Order</button>
+    </div>
+  </section>
+
+  <footer class="container-fluid border border-rounded footbot">
+    <div class="Logo">
+        <img src="../assets/SUPERSUB.png" alt="">
+    </div>
+    <p>&copy; 2023 Submarine Sandwiches. All rights reserved.</p>
+    <div class="socials">
+        <img src="../assets/face.png" alt="">
+        <img src="../assets/insta.png" alt="">
+    </div>
+  </footer>
+
+  <script type="application/javascript" src="../js/checkout.js"></script>
 
 </body>
 </html>
